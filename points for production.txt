@@ -1,0 +1,6 @@
+Few points that can be implemented for production if more time can be spend on this
+
+1) Currently this is in memory and hence the transfer wokrs perfectly fine on single machine. But if it has to be distributed sysyem then something like transaction
+log can be implemented
+2) Fault tolerancy and resilency can be handled properly for production system
+3) Transaction states can be handled like initiated, completed, pending 
