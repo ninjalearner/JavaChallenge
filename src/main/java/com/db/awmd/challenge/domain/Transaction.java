@@ -12,6 +12,13 @@ import org.hibernate.validator.constraints.NotEmpty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * 
+ * Domain object for transaction
+ * 
+ * @author nikhil.agrawal
+ *
+ */
 @Data
 public class Transaction {
 

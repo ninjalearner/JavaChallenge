@@ -21,6 +21,10 @@ import com.db.awmd.challenge.domain.Account;
 import com.db.awmd.challenge.service.AccountsService;
 import com.db.awmd.challenge.service.TransactionService;
 
+/*
+ * Test class for TransactionService
+ * 
+ */
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class TransactionServiceTest {
@@ -32,6 +36,11 @@ public class TransactionServiceTest {
 	private TransactionService transactionService;
 
 
+	/**
+	 * Multi threaded test case for checking the thread safety of transfer method in service class
+	 * 
+	 * @throws InterruptedException
+	 */
 	@Test
 	public void transfer() throws InterruptedException{
 		Account account1 = new Account("123");
